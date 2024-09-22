@@ -1,0 +1,16 @@
+.form-element {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#description {
+  min-width: 250px;
+  min-height: 100px;
+}
+
+.error {
+  color: red;
+}

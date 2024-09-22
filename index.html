@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <form id="form" action="#" method="GET">
+      <fieldset>
+        <legend>Section informations</legend>
+        <div class="form-element">
+          <label for="prenom">Prenom</label>
+          <input
+            id="prenom"
+            type="text"
+            minlength="2"
+            placeholder="Inserez votre prenom"
+          />
+          <p id="prenom-error"></p>
+        </div>
+
+        <div class="form-element">
+          <label for="nom">Nom</label>
+          <input id="nom" minlength="2" placeholder="Inserez votre nom" />
+          <p id="nom-error"></p>
+        </div>
+
+        <div class="form-element">
+          <label for="age">Age</label>
+          <input id="age" type="number" min="0" max="100" />
+          <p id="age-error"></p>
+        </div>
+      </fieldset>
+
+      <div class="form-element">
+        <label for="color">Couleur favorite</label>
+        <input id="color" type="color" />
+      </div>
+
+      <div class="form-element">
+        <label for="description">Parlez nous de vous</label>
+        <textarea id="description" placeholder="Decrivez vos passions!">
+Je suis un passionné de ...</textarea
+        >
+      </div>
+
+      <button type="submit">Soumettre</button>
+    </form>
+
+    <div id="resultat"></div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
